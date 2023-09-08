@@ -1,0 +1,67 @@
+* {
+  /* font-family: "Outfit", sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-container: #11393e;
+  --primary: #1b5560;
+  --primary-light: #118ca2;
+  --secondary-container: #f7961d;
+  --secondary: #fcbc11;
+  --secondary-light: #fad107;
+  --font-size-paragraph: 15px;
+}
+
+body {
+  min-heigth: 100vh;
+  background-color: var(--light-gray);
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+}
+
+.btn-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.btn-outline-primary {
+  border: 1px solid var(--primary) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.btn-lg {
+  width: 320px !important;
+}
+
+.title {
+  color: var(--secondary);
+}
+
+.sub-title {
+  color: var(--primary);
+}
+
+ol,
+ul {
+  padding-left: 0 !important;
+}
+
+.point {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.join-us {
+  background-color: var(--secondary-light);
+}
+
+/* faq */
