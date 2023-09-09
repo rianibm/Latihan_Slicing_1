@@ -15,11 +15,7 @@
   --font-size-paragraph: 15px;
 }
 
-body {
-  min-heigth: 100vh;
-  background-color: var(--light-gray);
-}
-
+/* button styleguide */
 .btn-primary {
   background-color: var(--primary) !important;
   border: 1px solid var(--primary) !important;
@@ -33,6 +29,12 @@ body {
   border: 1px solid var(--primary) !important;
 }
 
+.btn-primary:hover {
+  /* background-color: rgba(var(--primary), 0.1) !important; */
+  background-color: var(--primary-light) !important;
+  border: none !important;
+}
+
 .btn-outline-primary:hover {
   background-color: var(--primary) !important;
   color: white !important;
@@ -40,6 +42,36 @@ body {
 
 .btn-lg {
   width: 320px !important;
+}
+
+/* font styleguide */
+
+body {
+  min-heigth: 100vh;
+}
+
+/* nav header */
+/* Default header styles */
+#header {
+  background-color: var(--primary-container);
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Add shadow to the header when scrolling */
+#header.scroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  color: black;
+}
+
+/* jumbotron */
+.jumbotron {
+  background-color: var(--primary-container);
+  color: white !important;
 }
 
 .title {
@@ -65,3 +97,7 @@ ul {
 }
 
 /* faq */
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-light) !important;
+  color: white !important;
+}
