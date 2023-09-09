@@ -21,10 +21,16 @@
   border: 1px solid var(--primary) !important;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.custom-btn:hover,
+.custom-btn.btn-primary:hover {
   /* background-color: rgba(var(--primary), 0.1) !important; */
   background-color: var(--primary-light) !important;
   border: none !important;
+}
+
+.btn-md {
+  width: 160px;
 }
 
 .btn-lg {
@@ -51,6 +57,11 @@ body {
   z-index: 100;
   background-color: white;
   color: black;
+}
+
+/* default hamburger menu */
+.navbar-toggler-icon {
+  color: white !important;
 }
 
 header nav ul li a:hover {
@@ -81,6 +92,58 @@ ul {
   gap: 0.5rem;
 }
 
+/* kelas bootcamp */
+.card {
+  border-radius: 1.13094rem;
+  width: 15rem;
+}
+
+.custom-column {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.custom-column:first-child {
+  margin-left: 0;
+}
+
+.custom-column:last-child {
+  margin-right: 0;
+}
+
+.custom-btn {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+/* card color */
+.fsw {
+  background: #c5f4fd;
+}
+
+.uiux {
+  background: rgba(253, 154, 39);
+}
+
+.be-java {
+  background: rgba(12, 197, 228);
+}
+
+.android-kotlin {
+  background: rgba(155, 220, 4);
+}
+
+/* alumni */
+.logo-pt {
+  width: 10%;
+}
+
+.qa {
+  background: rgba(2, 171, 100);
+}
+
+/* pendaftaran */
 .join-us {
   background-color: var(--secondary-light);
 }
@@ -91,9 +154,22 @@ ul {
   color: white !important;
 }
 
-/* footer */
+/* footer & nav footer */
+.nav-footer,
 footer {
   background-color: var(--primary-container);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.nav-footer h6 {
+  color: var(--secondary);
+}
+
+.logo-donlot {
+  width: 100px;
 }
 
 footer a {
