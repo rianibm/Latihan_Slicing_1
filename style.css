@@ -105,3 +105,10 @@ footer a:hover {
   color: var(--secondary-light);
   font-weight: bold;
 }
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .why {
+    display: block;
+  }
+}
